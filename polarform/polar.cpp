@@ -14,7 +14,7 @@ void convert_to_rect()
     b=r*sin(angle);
     cout<<"Rectangular form is: "<<a<<" + i("<<b<<")"<<endl;
 }
-void rectpola()
+void convert_to_pola()
 {
     float x, y, rad, a, r, pi=3.14;
     cout<<"Enter the value of X: ";
@@ -40,7 +40,7 @@ int main()
             convert_to_rect();
             break;
         case 2:
-            rectpola();
+            convert_to_pola();
             break;
         default:
             cout<<"Invalid option";
