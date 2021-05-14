@@ -1,16 +1,14 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int num, prev = 0, next = 0, val = 1;
+    int num, prev = 0, next = 1, val = 1;
     cout<<"Enter number : ";
     cin>>num;
 
-    do{
-        cout<<val<<endl;
+    while(next<=num){
+        printf("%d, ",next);
         prev = val;
-        next = prev+val;
         val = next;
-
-    }while(val<=num);
+        next = prev+ val; 
+    }
 }
-//1,1,2,3,5,8;
